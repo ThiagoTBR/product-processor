@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  mongodb:
+    image: mongo:4.4.10
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+  app:
+    image: product-processor
+    container_name: product-processor
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://mongodb:27017/product_processor
