@@ -120,5 +120,5 @@ docker-compose up
 
 ## ✒️ Autores
 
-* **Thiago Albuquerque** - [umdesenvolvedor](https://github.com/linkParaPerfil)
+* **Thiago Albuquerque**
 
